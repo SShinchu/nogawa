@@ -1,0 +1,47 @@
+<%= stylesheet_link_tag 'photos_new',:media=>"all" %>
+
+<header>
+</header>
+<section id="first-block">
+  <div class="bg-image5">
+    <div class="bg-inner">
+      <div class="upp">
+          <%= link_to '生物学科公式スポーツ大会', :controller => "top", :action => "index" %>
+      </div>
+
+      <div class="main-title">
+          画像一覧
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="second-block">
+  <div class="blue">
+    <%= link_to '画像一覧へ', :controller => "photos", :action => "index" %>
+  </div>
+
+  <div class="post-container">
+    
+    <%= form_for @photo do |f| %>
+        <div class="field">
+          <div class="label-box__inner">
+            <label class="mealpicture">写真をアップロード
+              <%= f.file_field :image ,class:"input-default" %>
+            <div class="boxFileSelect"></div>
+            </label>
+          </div>
+        </div>
+
+        <div class="field">
+          <%= f.label :コメント %>
+          <%= f.text_field :comment, :size=>140%>
+        </div>
+
+        <div class="edit-2">  
+           <%= f.submit "編集する" %> 
+        </div>
+    <% end %>
+    <%=button_to '削除する',photo_path(@photo.id), method: :delete %>
+  </div>
+</section>

@@ -1,0 +1,30 @@
+<%= stylesheet_link_tag 'members_new', :media => "all" %>
+
+<header>
+</header>
+<section id="first-block">
+    <div class="upp">
+        <%= link_to '生物学科公式スポーツ大会', :controller => "top", :action => "index" %>
+    </div>
+
+    <div class="main-title">
+        参加チーム一覧
+    </div>
+</section>
+
+<section id="second-block">
+    <div class="blue">
+        <%= link_to '参加チームを見る', :controller => "members", :action => "index" %>
+    </div>
+
+<section id="third-block">
+<div class="member">
+  <p><%= @member.title %></p>
+  <p><%= @member.name %></p>
+  <p><%= @member.mate %></p>
+</div>
+<%= button_to "編集", edit_member_path(@member.id) %>  
+<%= button_to "削除",member_path(@member.id), method: :delete %>
+
+
+</section>

@@ -1,0 +1,115 @@
+#first-block {
+    width: 100%;
+    height: 300px;
+}
+
+.bg-image5{
+    background-image: url("back5.jpg");
+    background-size: cover;
+    background-position: 0px -300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height:300px;
+}
+.bg-image5::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); 
+}
+  .main-title{
+    text-align:center;
+    font-size:128px;
+    color:#F2F2F2;
+    font-family:Abril Fatface;
+  }
+
+  .upp{
+    text-align:left;
+    font-size:32px;
+    padding:16px;
+    font-family:Abril Fatface;
+  }
+
+#second-block{
+    height:auto;
+    margin-top:0px;
+    padding-bottom:100px;
+    width:100%;
+    background-color: #F2F2F2;
+    font-size:30px;
+    background-image:none;
+}
+
+.post-container{
+    margin: 50px auto;
+    margin-top:100px;
+    margin-bottom:100px;
+    width: 80%;
+    border:solid #b9e6ff;
+    border-radius:10px;
+    text-align:center;
+    background-color:#b9e6ff;
+    text-align:center;
+}
+
+.field{
+    display:flex;
+    text-align:center;
+
+}
+
+.label-box__inner{
+    padding: 10px 20px 10px 20px;
+    height:40px;
+    background-color:#377DD1;
+     .input-default{
+       display: none;
+      }
+    margin-bottom:100px;
+    border-radius:20px;
+    box-shadow: -1px -1px 1px rgba(255, 255, 255, .44), 1px 1px 1px
+   }
+
+.title{
+    font-size:32px;
+    font-weight:bold;
+    margin-bottom:50px;
+}
+
+
+input[type="text"]{
+    width:80%;
+    height:40px;
+}
+
+input[type="file"]{
+    width:40%;
+    height:80px;
+}
+
+input[type="submit"]{
+    width:200px;
+    font-size:20px;
+    margin-top:50px;
+    margin-bottom:30px;
+}
+
+.edit2{
+    width:600px;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-left:100px;
+    margin-top:50px;
+    
+    }
+
+

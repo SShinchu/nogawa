@@ -1,0 +1,52 @@
+<%= stylesheet_link_tag 'photos_index', :media => "all" %>
+
+<header>
+</header>
+<section id="first-block">
+  <div class="bg-image5">
+    <div class="bg-inner">
+      <div class="upp">
+          <%= link_to '生物学科公式スポーツ大会', :controller => "top", :action => "index" %>
+      </div>
+
+      <div class="main-title">
+          画像詳細
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="second-block">
+  <div class="blue">
+    <a href="photos/new" >投稿ページへ</a>
+    <a href="photos">画像一覧へ</a>
+  </div>
+
+  <div class="post-container">
+    <div class="main-box">
+      <div class="left-conteiner">
+        <%= image_tag @photo.image_url, size: "300x600" if @photo.image? %>
+      </div>     
+
+      <div class="right-container">
+        <div>
+          <p><%=@photo.comment %></p>
+        </div>
+      <div>
+        <%= @photo.created_at %>
+      </div>
+      <div class="photo">
+          
+          
+      </div>
+    </div>
+  </div>
+  <div class="edit2">
+    <div class="edit3">
+      <%= link_to "一覧に戻る", photos_path %>
+    </div>
+    <div class="edit3">
+      <%= link_to "編集する",edit_photo_path(@photo.id) %>
+    </div>
+  </div>   
+</section>

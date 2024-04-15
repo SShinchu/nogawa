@@ -1,0 +1,31 @@
+<section id="second-block">
+  <div class="about-container">
+    <p class="info-text">
+      <%= link_to 'schedule', :controller => "schedule", :action => "index" %>
+    </p>
+
+    
+
+    <p class="info-text">
+      <%= link_to 'Photo', :controller => "photos", :action => "index" %>
+    </p>
+
+  </div>
+</section>
+
+<section id="third-block">
+    <p class="title">
+      開催日程
+    </p>
+
+    <p class="event-name">
+      2024.03.04 第1回大会
+      <%= link_to '試合結果', schedule_result20240304_path %>
+    </p>
+
+  </div>
+<!--  コンテンツはここまで  -->
+
+  <footer>	
+  </footer>
+</body>

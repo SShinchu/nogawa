@@ -1,0 +1,111 @@
+<%= stylesheet_link_tag 'top', :media => "all" %>
+<header>
+</header>
+<div id="first-block">
+    <div class="bg-image1">
+        <div class="bg-inner">
+            <div class="upp">        
+                <%= link_to '生物学科公式スポーツ大会', :controller => "top", :action => "index" %>
+            </div>
+            <div class="nogawa">
+                NOGAWA 
+                <br>
+                CUP
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="second-block">
+    <div class="title-name">
+        UPCOMING EVENT
+    </div>
+
+    <div class="event-day">
+        <div class="day">
+            4.31
+        </div>
+        <div class="type">
+            Footsal
+        </div>
+    </div>
+
+    <div class="join">
+        <%= link_to 'join', :controller => "members", :action => "new" %>
+    </div>
+</section>
+
+<section id="third-section">
+    <div class="title">
+        生物学科では公式スポーツ大会を開催しています！
+    </div>
+
+    <div class="sports-container">
+        <div class="sports">  
+            <%= image_tag 'footsal1.jpg', class:"logo-image" %>
+            <div class="sports-name"> 
+                Footsal
+            </div>
+        </div>
+            
+        <div class="sports">
+            <%= image_tag 'baseball1.jpg', class:"logo-image" %>
+            <div class="sports-name">
+                Baseball
+            </div>
+        </div>
+            
+        <div class="sports">
+            <%=image_tag 'bad1.jpg',class:"logo-image" %>
+            <div class="sports-name">
+                Badminton
+            </div>
+        </div>
+    </ul>
+</section>
+
+<section id="forth-block">
+    <div class="action-title">
+        <%= link_to '写真を投稿する', :controller => "photos", :action => "new" %>
+        </br>
+        </br>
+        <%= link_to '写真を見る', :controller => "photos", :action => "index" %>
+    </div>
+        
+    <%=image_tag 'koke.jpg',class:"photo-image" %>
+
+</section>
+
+<section id="fifth-block">
+    <div class="schedule-title">
+        <br>
+        3.4 Footsal  <%=link_to "結果を見る",:controller=>"schedule",:action=>"result20240304" %>
+        </br>
+        </br>
+        2.30 Badminton  <%=link_to "結果を見る",:controller=>"schedule",:action=>"result2024XXXX" %>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+           
+    </div>
+    <%=image_tag 'note.jpg',class:"note-image" %>
+</section>
+
+<section id="logout">
+    <% if user_signed_in? %>
+        <%= button_to 'ログアウト', destroy_user_session_path, method: :delete %>
+    <% else %>
+        <div class="blue">
+            <%= link_to "ログイン", new_user_session_path %>
+            <%= link_to "新規登録", new_user_registration_path %>
+        </div>
+    <% end %>
+</section>
+
+
+
+

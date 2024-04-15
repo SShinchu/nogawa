@@ -1,0 +1,161 @@
+// Place all the styles related to the members controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+#first-block {
+    width: 100%;
+    height: 300px;
+}
+
+.bg-image2{
+  background-image: url("back2.jpg");
+  background-size: cover;
+  background-position: 0px -300px;
+  position: absolute;
+  width:100%;
+  height:100%;
+  height:300px;
+}
+
+.bg-image2::before {
+  content: '';
+  /* ↓暗いオーバーレイを半透明で配置 */
+  background-color:rgba(0,0,0,0.7);
+  /* ↓全体を覆うように配置 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.bg-inner {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+}
+
+  a{
+    text-decoration:none
+    }
+
+  a:link{
+    color:#F2F2F2
+  }
+
+  a:visited{
+    color:#F2F2F2
+  }
+  a:hover{
+    color:#FF0099
+  }
+  a:active{
+    color:#33CC00;
+  }
+
+  .main-title{
+    text-align:center;
+    font-size:128px;
+    color:#F2F2F2;
+    font-family:Abril Fatface;
+  }
+
+
+
+  .upp{
+    text-align:left;
+    font-size:32px;
+    padding:16px;
+    font-family:Abril Fatface;
+  }
+
+#second-block{
+    height:auto;
+    width:100%;
+    background-color: #F2F2F2;
+    font-size:30px;
+    margin-left:0px;
+    margin-right:0px;
+    border-radius: 0px;
+
+}
+    .blue{
+        text-align:left;
+        padding-left:30px;
+        padding-top:30px;
+    }
+
+
+    .post-container {
+        width: 80%;
+        background-color:#B9E6FF;
+      }
+
+      .title{
+        width:100%;
+        font-size:30px;
+        margin-left:0px;
+        display:flex;
+        text-align:center;
+        margin-left:0px;
+        }
+
+      .post{
+        width:100%;
+        font-size:30px;
+        margin-left:25px;
+        margin-top:10px;
+        display:flex;
+        flex-direction:row;
+        text-align:center;
+      }
+
+      .team{
+        width:200px;
+        margin:10px;
+        font-size:30px;
+        text-align:center;
+      }
+
+      .name{
+        width:200px;
+        margin:10px;
+        font-size:30px;
+        text-align:center;
+      }
+
+      .member{
+        width:450px;
+        margin:10px;
+        font-size:30px;
+        text-align:center;
+      }
+
+
+    .edit{
+        height:50px;
+        width:80px;
+        background-color:#1B4479;
+        border-radius:20px;
+        margin-left:10px;
+    }
+
+    .edit a{  
+        font-size:25px;
+        text-align: center;  
+     
+    }
+
+
+
+      
+
+      
+      
+     
+   
+    
+    
+      
+    

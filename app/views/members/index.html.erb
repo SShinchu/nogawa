@@ -1,0 +1,64 @@
+<%= stylesheet_link_tag 'members_index', :media => "all" %>
+<header>
+</header>
+<section id="first-block">
+  <div class="bg-image2">
+    <dv class="bg-inner">
+      <div class="upp">
+          <%= link_to '生物学科公式スポーツ大会', :controller => "top", :action => "index" %>
+      </div>
+
+      <div class="main-title">
+          参加チーム一覧
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="second-block">
+  <div class="blue">
+    <a href="members/new" >新規参加登録へ</a>
+  </div>
+
+  <div class="post-container"> 
+      <div class="title">
+        <div class="team">
+          チーム名
+        </div>
+        <div class="name">
+          代表者名
+        </div>
+        <div class="member">
+          メンバー
+        </div>
+        <div>
+          
+        </div>
+      </div>
+
+      <% @members.each do |t| %>
+        <div class="post">
+          <div class="team">
+            <%=t.title %>
+          </div>
+          <div class="name">
+            <%=t.name %>
+          </div>
+          <div class="member">
+            <%=t.mate %>
+          </div>
+          
+          <div class="edit"> 
+            <%= link_to "編集", edit_member_path(t.id) %>  
+          </div>
+      
+        </div>
+      <% end %>
+  </div>     
+</section>
+
+
+
+
+  
+  
